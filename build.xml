@@ -47,7 +47,11 @@
 		<delete dir="${build}"/>
 		<delete dir="${dist}"/>
 	</target>
-
+	
+	<target name="deploy" depends="dist">
+		<echo>${end}</echo>
+	</target>
+	
 	<target name="end" depends="clean">
 		<echo>${end}</echo>
 	</target>
