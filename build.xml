@@ -26,6 +26,10 @@
 		<mkdir dir="${build}"/>
 	</target>
 
+	<target name="test">
+		<echo>${test}</echo>
+	</target>
+	
 	<target name="hello" depends="init">
 		<echo>${hello}</echo>
 	</target>
